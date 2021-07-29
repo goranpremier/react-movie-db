@@ -1,12 +1,12 @@
-import { useQuery } from "react-query";
-import { client } from "./api-client";
+import { useQuery } from 'react-query'
+import { client } from './api-client'
 
 export function useLanguages() {
   return useQuery({
-    queryKey: "configurations/languages",
+    queryKey: 'configurations/languages',
     queryFn: async () =>
-      client("/configuration/languages", {
-        method: "GET",
+      client('/configuration/languages', {
+        method: 'GET',
       }),
-  });
+  })
 }

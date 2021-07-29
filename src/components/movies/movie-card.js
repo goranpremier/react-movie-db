@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const CardWrapper = styled.div`
   background: #fff;
@@ -9,7 +9,7 @@ const CardWrapper = styled.div`
   border-radius: 10px;
   display: inline-block;
   cursor: pointer;
-`;
+`
 
 const CardHeader = styled.div`
   padding: 0;
@@ -21,7 +21,7 @@ const CardHeader = styled.div`
   border-top-right-radius: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   background-size: cover;
-`;
+`
 
 function MovieCard({ movie, ...props }) {
   return (
@@ -32,7 +32,7 @@ function MovieCard({ movie, ...props }) {
         }}
       />
     </CardWrapper>
-  );
+  )
 }
 
-export { MovieCard };
+export { MovieCard }

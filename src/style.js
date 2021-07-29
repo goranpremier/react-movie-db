@@ -1,5 +1,5 @@
-import "@reach/menu-button/styles.css";
-import { createGlobalStyle } from "styled-components";
+import '@reach/menu-button/styles.css'
+import { createGlobalStyle } from 'styled-components'
 
 export const GlobalStyle = createGlobalStyle`
   html, body, div, span, applet, object, iframe,
@@ -67,4 +67,4 @@ export const GlobalStyle = createGlobalStyle`
     overflow-y: scroll;
     height: 100vh;
   }
-`;
+`

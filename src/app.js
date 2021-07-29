@@ -1,12 +1,12 @@
-import * as React from "react";
-import { Switch, Route } from "react-router-dom";
-import { GlobalStyle } from "./style";
+import * as React from 'react'
+import { Switch, Route } from 'react-router-dom'
+import { GlobalStyle } from './style'
 
-import { Home } from "./screens/home";
-import { Movies } from "./screens/movies";
-import { Persons } from "./screens/persons";
-import { TvShows } from "./screens/tv-shows";
-import { Navbar } from "./components/navbar/navbar";
+import { Home } from './screens/home'
+import { Movies } from './screens/movies'
+import { Persons } from './screens/persons'
+import { TvShows } from './screens/tv-shows'
+import { Navbar } from './components/navbar/navbar'
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         </Switch>
       </main>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

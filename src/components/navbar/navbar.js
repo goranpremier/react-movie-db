@@ -1,15 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 import {
   Menu,
   MenuItems,
   MenuLink,
   MenuPopover,
   MenuButton,
-} from "@reach/menu-button";
+} from '@reach/menu-button'
 import {
   Close as CloseIcon,
   Menu as MenuIcon,
-} from "styled-icons/ionicons-outline";
+} from 'styled-icons/ionicons-outline'
 import {
   NavbarWrapper,
   DesktopMenu,
@@ -17,13 +17,13 @@ import {
   MobilePopover,
   MobileMenu,
   MobileMenuIcon,
-} from "./navbar.styles";
+} from './navbar.styles'
 
 const LINKS = [
-  { url: "/movies", name: "Movies" },
-  { url: "/tv", name: "TV Shows" },
-  { url: "/persons", name: "Persons" },
-];
+  { url: '/movies', name: 'Movies' },
+  { url: '/tv', name: 'TV Shows' },
+  { url: '/persons', name: 'Persons' },
+]
 
 function MobileNav() {
   return (
@@ -55,7 +55,7 @@ function MobileNav() {
         </>
       )}
     </Menu>
-  );
+  )
 }
 
 function Navbar() {
@@ -77,7 +77,7 @@ function Navbar() {
         <MobileNav />
       </div>
     </NavbarWrapper>
-  );
+  )
 }
 
-export { Navbar };
+export { Navbar }

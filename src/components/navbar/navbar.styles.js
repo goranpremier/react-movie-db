@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { ReactComponent as TheMovieDBLogo } from "../../assets/tmdb-logo.svg";
+import styled from 'styled-components'
+import { ReactComponent as TheMovieDBLogo } from '../../assets/tmdb-logo.svg'
 
 export const NavbarWrapper = styled.nav`
   width: 100%;
@@ -19,7 +19,7 @@ export const NavbarWrapper = styled.nav`
     display: flex;
     align-items: center;
   }
-`;
+`
 
 export const DesktopMenu = styled.div`
   @media (max-width: ${(props) => props.theme.breakpoints.md}) {
@@ -42,12 +42,12 @@ export const DesktopMenu = styled.div`
       color: ${(props) => props.theme.colors.secondaryText};
     }
   }
-`;
+`
 
 export const StyledMovieDBLogo = styled(TheMovieDBLogo)`
   height: 40px;
   margin-right: 20px;
-`;
+`
 
 export const MobileMenuIcon = styled.button`
   display: none;
@@ -71,7 +71,7 @@ export const MobileMenuIcon = styled.button`
   > svg {
     height: 30px;
   }
-`;
+`
 
 export const MobilePopover = styled.div`
   background: ${(props) => props.theme.colors.primary};
@@ -79,7 +79,7 @@ export const MobilePopover = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const MobileMenu = styled.div`
   width: 100%;
@@ -100,4 +100,4 @@ export const MobileMenu = styled.div`
       color: ${(props) => props.theme.colors.secondaryText};
     }
   }
-`;
+`

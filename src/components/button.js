@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 const StyledButton = styled.button`
   cursor: pointer;
@@ -26,14 +26,14 @@ const StyledButton = styled.button`
   border-radius: 2px;
   background: ${(props) => props.theme.colors.primary};
   color: ${(props) => props.theme.colors.primaryText};
-`;
+`
 
 function Button({ variant, children, ...buttonProps }) {
   return (
     <StyledButton variant={variant} {...buttonProps}>
       {children}
     </StyledButton>
-  );
+  )
 }
 
-export { Button };
+export { Button }

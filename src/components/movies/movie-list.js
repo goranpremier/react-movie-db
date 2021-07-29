@@ -1,24 +1,24 @@
-import * as React from "react";
-import styled from "styled-components";
-import { useDiscoverMovies } from "../../utils/movies";
-import { MovieCard } from "./movie-card";
-import { Button } from "../button";
+import * as React from 'react'
+import styled from 'styled-components'
+import { useDiscoverMovies } from '../../utils/movies'
+import { MovieCard } from './movie-card'
+import { Button } from '../button'
 
 const MovieListWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-`;
+`
 
 function MovieList() {
-  const { isLoading, isError, data, fetchNextPage } = useDiscoverMovies();
+  const { isLoading, isError, data, fetchNextPage } = useDiscoverMovies()
 
   if (isLoading) {
-    return <h1>Loading...</h1>;
+    return <h1>Loading...</h1>
   }
 
   if (isError) {
-    return <h1>Error</h1>;
+    return <h1>Error</h1>
   }
 
   return (
@@ -30,11 +30,11 @@ function MovieList() {
           ))}
         </React.Fragment>
       ))}
-      <Button style={{ width: "100%" }} onClick={fetchNextPage}>
+      <Button style={{ width: '100%' }} onClick={fetchNextPage}>
         Load more
       </Button>
     </MovieListWrapper>
-  );
+  )
 }
 
-export { MovieList };
+export { MovieList }
