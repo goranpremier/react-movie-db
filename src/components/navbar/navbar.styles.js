@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from '@emotion/styled'
 import { ReactComponent as TheMovieDBLogo } from '../../assets/tmdb-logo.svg'
 
 export const NavbarWrapper = styled.nav`

@@ -5,8 +5,9 @@ import { ReactQueryDevtools } from 'react-query/devtools'
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './app'
 import reportWebVitals from './reportWebVitals'
-import { ThemeProvider } from 'styled-components'
-import { defaultTheme } from './themes'
+import { ThemeProvider } from '@emotion/react'
+
+import { defaultTheme, GlobalStyle } from './themes'
 
 const queryClient = new QueryClient()
 
@@ -17,6 +18,7 @@ ReactDOM.render(
         <Router>
           <App />
         </Router>
+        <GlobalStyle />
       </ThemeProvider>
       <ReactQueryDevtools initialIsOpen={false} />
     </QueryClientProvider>

@@ -1,6 +1,5 @@
 import * as React from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { GlobalStyle } from './style'
 
 import { Home } from './screens/home'
 import { Movies } from './screens/movies'
@@ -10,8 +9,7 @@ import { Navbar } from './components/navbar/navbar'
 
 function App() {
   return (
-    <div className="App">
-      <GlobalStyle />
+    <>
       <Navbar />
       <main style={{ marginTop: 61 }}>
         <Switch>
@@ -21,7 +19,7 @@ function App() {
           <Route exact={true} path="/persons" component={TvShows} />
         </Switch>
       </main>
-    </div>
+    </>
   )
 }
 
