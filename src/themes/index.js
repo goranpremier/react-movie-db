@@ -94,12 +94,8 @@ function GlobalStyle() {
           padding: 0;
           border: 0;
           font-size: 100%;
-          font-family: ${theme.fontFamily};
+          font-family: ${theme.typography.fontFamily};
           vertical-align: baseline;
-        }
-        body {
-          background: ${theme.colors.background};
-          color: ${theme.colors.backgroundText};
         }
         html,
         body {
@@ -125,6 +121,10 @@ function GlobalStyle() {
         }
         body {
           line-height: 1;
+          background: ${theme.colors.body.background};
+          color: ${theme.colors.body.text};
+          font-weight: ${theme.typography.fontWeightRegular};
+          font-size: ${theme.typography.fontSize};
         }
         menu,
         ol,

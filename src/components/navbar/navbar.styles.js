@@ -3,8 +3,8 @@ import { ReactComponent as TheMovieDBLogo } from '../../assets/tmdb-logo.svg'
 
 export const NavbarWrapper = styled.nav`
   width: 100%;
-  background: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.primaryText};
+  background: ${(props) => props.theme.colors.primary.background};
+  color: ${(props) => props.theme.colors.primary.text};
   z-index: 10;
   position: fixed;
   top: 0;
@@ -22,7 +22,7 @@ export const NavbarWrapper = styled.nav`
 `
 
 export const DesktopMenu = styled.div`
-  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+  @media (max-width: 800px) {
     display: none;
   }
 
@@ -38,8 +38,8 @@ export const DesktopMenu = styled.div`
     transition: all ease-in 0.2s;
 
     &:hover {
-      background: ${(props) => props.theme.colors.secondary};
-      color: ${(props) => props.theme.colors.secondaryText};
+      background: ${(props) => props.theme.colors.secondary.background};
+      color: ${(props) => props.theme.colors.secondary.text};
     }
   }
 `
@@ -64,7 +64,7 @@ export const MobileMenuIcon = styled.button`
   justify-content: center;
   align-items: center;
 
-  @media (max-width: ${(props) => props.theme.breakpoints.md}) {
+  @media (max-width: 800px) {
     display: flex;
   }
 
@@ -74,8 +74,8 @@ export const MobileMenuIcon = styled.button`
 `
 
 export const MobilePopover = styled.div`
-  background: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.primaryText};
+  background: ${(props) => props.theme.colors.primary.bg};
+  color: ${(props) => props.theme.colors.primary.color};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,8 +96,8 @@ export const MobileMenu = styled.div`
     font-size: 18px;
 
     &:hover {
-      background: ${(props) => props.theme.colors.secondary};
-      color: ${(props) => props.theme.colors.secondaryText};
+      background: ${(props) => props.theme.colors.secondary.bg};
+      color: ${(props) => props.theme.colors.secondary.color};
     }
   }
 `
