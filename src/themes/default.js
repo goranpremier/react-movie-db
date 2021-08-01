@@ -48,6 +48,41 @@ const typography = {
   fontWeightRegular: 400,
   fontWeightMedium: 500,
   fontWeightBold: 700,
+  h1: {
+    fontWeight: 500,
+    fontSize: '38px',
+    lineHeight: 1.23,
+  },
+  h2: {
+    fontWeight: 500,
+    fontSize: '30px',
+    lineHeight: 1.35,
+  },
+  h3: {
+    fontWeight: 500,
+    fontSize: '24px',
+    lineHeight: 1.35,
+  },
+  h4: {
+    fontWeight: 500,
+    fontSize: '20px',
+    lineHeight: 1.4,
+  },
+  h5: {
+    fontWeight: 500,
+    fontSize: '18px',
+    lineHeight: 1.5,
+  },
+  h6: {
+    fontWeight: 500,
+    fontSize: '16px',
+    lineHeight: 1.5,
+  },
+  p: {
+    fontWeight: 400,
+    fontSize: '14px',
+    lineHeight: 1.5,
+  },
 }
 
 const transitions = {
