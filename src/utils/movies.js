@@ -1,11 +1,11 @@
 import { useQuery, useInfiniteQuery } from 'react-query'
 import { client } from './api-client'
 
-export function useDiscoverMovies() {
+export function useDiscoverMovies(query) {
   return useInfiniteQuery(
-    'movies/discover',
+    ['movies/discover', query],
     async ({ pageParam = 1 }) =>
-      client(`/discover/movie?page=${pageParam}`, { method: 'GET' }),
+      client(`/discover/movie?page=${pageParam}&${query}`, { method: 'GET' }),
     {
       getNextPageParam: ({ page, total_pages: totalPages }) => {
         return page < totalPages ? page + 1 : undefined

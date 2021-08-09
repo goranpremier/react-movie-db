@@ -1,27 +1,16 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { QueryClient, QueryClientProvider } from 'react-query'
-import { ReactQueryDevtools } from 'react-query/devtools'
-import { BrowserRouter as Router } from 'react-router-dom'
 import App from './app'
 import reportWebVitals from './reportWebVitals'
-import { ThemeProvider } from '@emotion/react'
+import { AppProviders } from './contexts'
 
-import { defaultTheme, GlobalStyle } from './themes'
-
-const queryClient = new QueryClient()
+import './assets/styles/index.css'
 
 ReactDOM.render(
   <React.StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <ThemeProvider theme={defaultTheme}>
-        <Router>
-          <App />
-        </Router>
-        <GlobalStyle />
-      </ThemeProvider>
-      <ReactQueryDevtools initialIsOpen={false} />
-    </QueryClientProvider>
+    <AppProviders>
+      <App />
+    </AppProviders>
   </React.StrictMode>,
   document.getElementById('root'),
 )

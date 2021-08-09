@@ -1,12 +1,17 @@
 import { useQuery } from 'react-query'
 import { client } from './api-client'
 
-export function useLanguages() {
+export function useConfiguration(configuration) {
+  const endpoint = configuration
+    ? `/configuration/${configuration}`
+    : '/configuration'
+
   return useQuery({
-    queryKey: 'configurations/languages',
+    queryKey: endpoint,
     queryFn: async () =>
-      client('/configuration/languages', {
+      client(endpoint, {
         method: 'GET',
       }),
+    staleTime: Infinity,
   })
 }
